@@ -20,7 +20,7 @@ rl.on("line", (task) =>{
         console.log("You must write something");
     }
     else{
-        fs.writeFile("/Javascript/Todolist app/data.json", myData, function(err){
+        fs.writeFile("data.json", myData, function(err){
             if(err){
                 return console.log(err);
             }
